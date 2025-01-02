@@ -4,11 +4,11 @@ Welcome to the repository showcasing two distinct approaches to image captioning
 
 1. **LLM-Based Multimodal Transformer**
    - Combines text and image modalities using advanced transformer architectures.
-   - Detailed in `readme-llm.md`.
+   - Detailed in `readme.md`.
 
 2. **Deep Learning-Based Encoder-Decoder**
    - Uses CNNs and RNNs (LSTMs) for image captioning.
-   - Detailed in `readme-ml.md`.
+   - Detailed in `readme.md`.
 
 ---
 
@@ -68,6 +68,9 @@ multimodal-transformer-v7.ipynb
 cd ml_model
 multimodal-deep-learning.ipynb
 ```
+
+Example of inference.
+![](assets/2025-01-02-11-58-51.png)
 
 ---
 
