@@ -45,7 +45,7 @@ Welcome to the repository showcasing two distinct approaches to image captioning
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/multimodal-image-captioning.git
+git clone https://github.com/ruslanmv/multimodal-image-captioning.git
 cd multimodal-image-captioning
 ```
 
@@ -123,6 +123,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - **Ruslan Magana Vsevolodovna**  
   Researcher and Developer  
   [GitHub Profile](https://github.com/ruslanmv)
+  [HomePage](https://ruslanmv.com/)
 
 For further questions or feedback, feel free to open an issue or contact us directly!
 
