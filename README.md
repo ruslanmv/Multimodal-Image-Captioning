@@ -53,26 +53,20 @@ cd multimodal-image-captioning
 
 Both models use the **Flickr30k** dataset. Make sure to download and preprocess it:
 
-- **Download**:
-  Use the `datasets` library or manually download the dataset from [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/).
-
-- **Preprocessing**:
-  Run the respective preprocessing scripts in `llm_model/datasets/` or `ml_model/datasets/` to prepare image-caption pairs.
-
 ### 3. Training
 
 #### For LLM-Based Multimodal Transformer:
 
 ```bash
 cd llm_model
-python train.py --config config/transformer_config.yaml
+multimodal-transformer-v7.ipynb
 ```
 
 #### For CNN-LSTM Deep Learning Model:
 
 ```bash
 cd ml_model
-python train.py --config config/cnn_lstm_config.yaml
+multimodal-deep-learning.ipynb
 ```
 
 ---
@@ -123,9 +117,9 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Authors
 
-- **Your Name**  
+- **Ruslan Magana Vsevolodovna**  
   Researcher and Developer  
-  [GitHub Profile](https://github.com/yourusername)
+  [GitHub Profile](https://github.com/ruslanmv)
 
 For further questions or feedback, feel free to open an issue or contact us directly!
 
