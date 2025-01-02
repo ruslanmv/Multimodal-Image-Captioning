@@ -30,37 +30,15 @@ In this blog, we focus on building a multimodal transformer model designed for i
 ### **High-Level Diagram**
 Below is a simplified diagram illustrating the flow of data through the system:
 
-```plaintext
-+--------------------+     +---------------------+
-|    Input Data      | --> | Data Preprocessing  |
-|  (Images & Captions)|     | (Tokenization,     |
-+--------------------+     |  Padding, Masking)  |
-                           +---------+-----------+
-                                     |
-                                     v
-          +------------------+   +-------------------+
-          | Image Encoder    |   | Text Embeddings   |
-          |  (ViT)           |   | (Word + Positional|
-          +--------+---------+   |  Embeddings)      |
-                   |                 +----------------+
-                   |                          |
-                   v                          v
-          +----------------------------------------+
-          |          Cross-Attention Layer         |
-          |  (Image Features ↔ Text Features)      |
-          +----------------------------------------+
-                            |
-                            v
-          +----------------------------------------+
-          |          Transformer Decoder           |
-          |  (Self-Attention + Cross-Attention)    |
-          +----------------------------------------+
-                            |
-                            v
-          +----------------------------------------+
-          |         Output Layer (Softmax)         |
-          |  (Generate Caption Tokens)             |
-          +----------------------------------------+
+```mermaid
+graph TD
+    A[Input Data <br> Images & Captions] --> B[Data Preprocessing <br> Tokenization, <br> Padding, Masking]
+    B --> C[Image Encoder <br> ViT]
+    B --> D[Text Embeddings <br> Word + Positional <br> Embeddings]
+    C --> E[Cross-Attention Layer <br> Image Features ↔ Text Features]
+    D --> E
+    E --> F[Transformer Decoder <br> Self-Attention + Cross-Attention]
+    F --> G[Output Layer Softmax <br> Generate Caption Token]
 ```
 
 # **2. Mathematical Foundations of Multimodal Transformers**
